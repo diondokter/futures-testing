@@ -1,0 +1,11 @@
+[package]
+name = "futures-testing"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cortex-m-rt = { version="0.7.5", features = [] }
+
+[profile.release]
+debug = false
+lto = true
