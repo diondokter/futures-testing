@@ -1,6 +1,6 @@
    Compiling proc-macro2 v1.0.105
-   Compiling unicode-ident v1.0.22
    Compiling quote v1.0.43
+   Compiling unicode-ident v1.0.22
    Compiling cortex-m-rt v0.7.5
    Compiling futures-testing v0.1.0 (R:\futures-testing)
  rustc_mir_transform::coroutine::run_pass 
@@ -16,28 +16,28 @@
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:6 ~ build_script_build[8d42]::main)
    0ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
+   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:7 ~ build_script_build[8d42]::rustc_minor_version)
+   0ms DEBUG rustc_mir_transform::coroutine return=()
+ rustc_mir_transform::coroutine::run_pass 
+   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:7 ~ build_script_build[8d42]::rustc_minor_version)
+   0ms DEBUG rustc_mir_transform::coroutine return=()
+ rustc_mir_transform::coroutine::run_pass 
+   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:8 ~ build_script_build[e9be]::main)
+   0ms DEBUG rustc_mir_transform::coroutine return=()
+ rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:31 ~ unicode_ident[d83c]::tables::LEAF)
+   0ms DEBUG rustc_mir_transform::coroutine return=()
+ rustc_mir_transform::coroutine::run_pass 
+   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:11 ~ unicode_ident[d83c]::ZERO)
+   0ms DEBUG rustc_mir_transform::coroutine return=()
+ rustc_mir_transform::coroutine::run_pass 
+   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:14 ~ build_script_build[ab67]::main)
    0ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:11 ~ build_script_build[9f2b]::main)
    0ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:12 ~ build_script_build[9f2b]::main::{closure#0})
-   0ms DEBUG rustc_mir_transform::coroutine return=()
- rustc_mir_transform::coroutine::run_pass 
-   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:8 ~ build_script_build[e9be]::main)
-   0ms DEBUG rustc_mir_transform::coroutine return=()
- rustc_mir_transform::coroutine::run_pass 
-   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:14 ~ build_script_build[ab67]::main)
-   0ms DEBUG rustc_mir_transform::coroutine return=()
- rustc_mir_transform::coroutine::run_pass 
-   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:11 ~ unicode_ident[d83c]::ZERO)
-   0ms DEBUG rustc_mir_transform::coroutine return=()
- rustc_mir_transform::coroutine::run_pass 
-   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:7 ~ build_script_build[8d42]::rustc_minor_version)
-   0ms DEBUG rustc_mir_transform::coroutine return=()
- rustc_mir_transform::coroutine::run_pass 
-   0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:7 ~ build_script_build[8d42]::rustc_minor_version)
    0ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:14 ~ build_script_build[ab67]::main)
@@ -12278,7 +12278,7 @@
    0ms DEBUG rustc_mir_transform::coroutine variant=[_s0]
    0ms DEBUG rustc_mir_transform::coroutine decl=CoroutineSavedTy { ty: Alias(Opaque, AliasTy { args: [], def_id: DefId(0:4 ~ futures_testing[a0ec]::foo::{opaque#0}), .. }), source_info: SourceInfo { span: src\main.rs:9:13: 9:25 (#13), scope: scope[0] }, ignore_for_traits: false }
    0ms DEBUG rustc_mir_transform::coroutine Checking must_not_suspend for impl Future<Output = i32>
-   5ms DEBUG rustc_mir_transform::coroutine return=Some(CoroutineLayout { field_tys: {_s0: CoroutineSavedTy { ty: Alias(Opaque, AliasTy { args: [], def_id: DefId(0:4 ~ futures_testing[a0ec]::foo::{opaque#0}), .. }), source_info: SourceInfo { span: src\main.rs:9:13: 9:25 (#13), scope: scope[0] }, ignore_for_traits: false }}, variant_fields: {Unresumed: [], Returned: [], Panicked: [], Suspend0: [_s0]}, storage_conflicts: BitMatrix(1x1) {(_s0, _s0)} })
+   6ms DEBUG rustc_mir_transform::coroutine return=Some(CoroutineLayout { field_tys: {_s0: CoroutineSavedTy { ty: Alias(Opaque, AliasTy { args: [], def_id: DefId(0:4 ~ futures_testing[a0ec]::foo::{opaque#0}), .. }), source_info: SourceInfo { span: src\main.rs:9:13: 9:25 (#13), scope: scope[0] }, ignore_for_traits: false }}, variant_fields: {Unresumed: [], Returned: [], Panicked: [], Suspend0: [_s0]}, storage_conflicts: BitMatrix(1x1) {(_s0, _s0)} })
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:19 ~ futures_testing[a0ec]::VTABLE)
    0ms DEBUG rustc_mir_transform::coroutine return=()
@@ -12287,9 +12287,7 @@
    0ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:5 ~ futures_testing[a0ec]::foo::{closure#0})
-   0ms WARN rustc_mir_transform::coroutine Look here! This is a coroutine :)
    0ms TRACE rustc_mir_transform::coroutine def_id=DefId(0:5 ~ futures_testing[a0ec]::foo::{closure#0})
-   0ms WARN rustc_mir_transform::coroutine Has any yield: false
    rustc_mir_transform::coroutine::transform_async_context 
      rustc_mir_transform::coroutine::replace_resume_ty_local local=_2, context_mut_ref=&'{erased} mut core::task::Context<'{erased}>
        0ms TRACE rustc_mir_transform::coroutine return=()
@@ -12388,15 +12386,13 @@
          0ms TRACE rustc_mir_transform::coroutine place=((*_6).0: i32)
        rustc_mir_transform::coroutine::replace_base place=(_1.0: i32), new_base=(*_6)
          0ms TRACE rustc_mir_transform::coroutine place=((*_6).0: i32)
-   4ms DEBUG rustc_mir_transform::coroutine return=()
+   5ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:6 ~ futures_testing[a0ec]::bar)
    0ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:8 ~ futures_testing[a0ec]::bar::{closure#0})
-   0ms WARN rustc_mir_transform::coroutine Look here! This is a coroutine :)
    0ms TRACE rustc_mir_transform::coroutine def_id=DefId(0:8 ~ futures_testing[a0ec]::bar::{closure#0})
-   0ms WARN rustc_mir_transform::coroutine Has any yield: true
    rustc_mir_transform::coroutine::transform_async_context 
      rustc_mir_transform::coroutine::replace_resume_ty_local local=_2, context_mut_ref=&'{erased} mut core::task::Context<'{erased}>
        0ms TRACE rustc_mir_transform::coroutine return=()
@@ -12840,7 +12836,7 @@
          0ms TRACE rustc_mir_transform::coroutine place=(*_22)
        rustc_mir_transform::coroutine::replace_base place=((_1 as variant#3).0: {async fn body of foo()}), new_base=(*_22)
          0ms TRACE rustc_mir_transform::coroutine place=(((*_22) as variant#3).0: {async fn body of foo()})
-   5ms DEBUG rustc_mir_transform::coroutine return=()
+   6ms DEBUG rustc_mir_transform::coroutine return=()
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:27 ~ futures_testing[a0ec]::__cortex_m_rt_main_trampoline)
    0ms DEBUG rustc_mir_transform::coroutine return=()
@@ -12865,4 +12861,4 @@
  rustc_mir_transform::coroutine::run_pass 
    0ms DEBUG rustc_mir_transform::coroutine def_id=DefId(0:26 ~ futures_testing[a0ec]::panic)
    0ms DEBUG rustc_mir_transform::coroutine return=()
-    Finished `release` profile [optimized] target(s) in 10.04s
+    Finished `release` profile [optimized] target(s) in 9.37s
